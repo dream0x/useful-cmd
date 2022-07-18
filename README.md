@@ -41,15 +41,19 @@ Displays information about RAM usage
 ```
 free -h
 ```
-Check what processes are running on the server (CPU load), `Shift + H` and only processes remain
+Displays information about the characteristics of the processor.
+```
+lscpu
+```
+Displays what processes are running on the server (CPU load), `Shift + H` and only processes remain
 ```
 htop
 ```
-Check what takes up space on the server (sorting from less to more)
+Displays what takes up space on the server (sorting from less to more)
 ```
 du -had 1 /root | sort -h
 ```
-Checking on which ports a particular process works
+Displays on which ports a particular process works
 ```
 netstat -ntlp | grep LISTEN
 ```
