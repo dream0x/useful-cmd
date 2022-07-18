@@ -30,6 +30,10 @@ Test the system performance only
 ```
 bash <(wget -qO- -o /dev/null yabs.sh) -di
 ```
+Displays server external IP address
+```
+wget -qO- eth0.me
+```
 
 ## Working with a server
 
