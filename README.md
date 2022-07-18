@@ -45,7 +45,10 @@ Displays information about the characteristics of the processor.
 ```
 lscpu
 ```
-Displays what processes are running on the server (CPU load), `Shift + H` and only processes remain
+**Requires installation** / Displays what processes are running on the server (CPU load), `Shift + H` and only processes remain. 
+```
+sudo apt install htop -y
+```
 ```
 htop
 ```
@@ -62,7 +65,6 @@ Displays on which ports a particular process works
 netstat -ntlp | grep LISTEN
 ```
 Installing GO (One command)
-
 ```
 ver="1.18.1" && \
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" && \
