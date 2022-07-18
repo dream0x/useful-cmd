@@ -64,6 +64,13 @@ Displays on which ports a particular process works
 ```
 netstat -ntlp | grep LISTEN
 ```
+**Requires installation** / Test the bandwidth of the Internet connection.
+```
+sudo apt install speedtest-cli -y
+```
+```
+speedtest-cli --simple
+```
 Installing GO (One command)
 ```
 ver="1.18.1" && \
