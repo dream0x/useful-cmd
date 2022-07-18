@@ -12,7 +12,7 @@ Install necessary utilities
 ```
 sudo apt install curl build-essential git wget jq make gcc tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
 ```
-The script displays basic information about the system and checks disk read and write speeds, internet connection bandwidth and system performance. Everything is tested by default.
+**The script displays basic information about the system and checks disk read and write speeds, internet connection bandwidth and system performance. Everything is tested by default**
 
 Full test
 ```
