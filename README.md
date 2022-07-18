@@ -12,17 +12,31 @@ Install necessary utilities
 ```
 sudo apt install curl build-essential git wget jq make gcc tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
 ```
-Check that the hard disks work
+The script displays basic information about the system and checks disk read and write speeds, internet connection bandwidth and system performance. Everything is tested by default.
+
+Full test
 ```
-curl -sL yabs.sh | bash -s -ig
+bash <(wget -qO- -o /dev/null yabs.sh)
 ```
-Check your internet connection
+Test disks only
 ```
-curl -sL yabs.sh | bash -s -fg
+bash <(wget -qO- -o /dev/null yabs.sh) -ig
+```
+Test internet speed only
+```
+bash <(wget -qO- -o /dev/null yabs.sh) -dg
+```
+Test the system performance only
+```
+bash <(wget -qO- -o /dev/null yabs.sh) -di
 ```
 
 ## Working with a server
 
+Displays the name of the current user
+```
+whoami
+```
 Check what processes are running on the server (CPU load), `Shift + H` and only processes remain
 ```
 htop
