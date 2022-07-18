@@ -49,6 +49,10 @@ Displays what processes are running on the server (CPU load), `Shift + H` and on
 ```
 htop
 ```
+Displays information about the operating system
+```
+cat /etc/*-release
+```
 Displays what takes up space on the server (sorting from less to more)
 ```
 du -had 1 /root | sort -h
