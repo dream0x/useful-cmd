@@ -37,6 +37,10 @@ Displays the name of the current user
 ```
 whoami
 ```
+Displays information about RAM usage
+```
+free -h
+```
 Check what processes are running on the server (CPU load), `Shift + H` and only processes remain
 ```
 htop
