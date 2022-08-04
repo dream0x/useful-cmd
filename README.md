@@ -86,4 +86,3 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile &
 source $HOME/.bash_profile && \
 go version
 ```
-<img src="https://github.com/doxe1/useful-cmd/blob/main/29eb26f376d3b48d61bce09590fff717.png" width="350">
