@@ -68,6 +68,10 @@ Displays on which ports a particular process works
 ```
 netstat -ntlp | grep LISTEN
 ```
+or
+```
+ss -tulpn
+```
 **Requires installation** / Test the bandwidth of the Internet connection.
 ```
 sudo apt install speedtest-cli -y
