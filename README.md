@@ -86,3 +86,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile &
 source $HOME/.bash_profile && \
 go version
 ```
+Check which RPC port the node is on, change the `.file` depending on the project (e.g. `.stride`)
+```
+echo $(grep -A 3 "\[rpc\]" ~/.stride/config/config.toml | egrep -o ":[0-9]+")
+```
