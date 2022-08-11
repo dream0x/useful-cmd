@@ -94,3 +94,15 @@ Check which RPC port the node is on, change the `.file` depending on the project
 ```
 echo $(grep -A 3 "\[rpc\]" ~/.stride/config/config.toml | egrep -o ":[0-9]+")
 ```
+How much space the logs take up:
+```
+journalctl --disk-usage
+```
+Clear the logs and leave only the last 2 days:
+```
+journalctl --vacuum-time=2d
+```
+Clear the logs and save the last 500MB:
+```
+journalctl --vacuum-size=500M
+```
