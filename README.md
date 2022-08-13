@@ -106,3 +106,7 @@ Clear the logs and save the last 500MB:
 ```
 journalctl --vacuum-size=500M
 ```
+File structure
+```
+ncdu
+```
