@@ -110,3 +110,9 @@ File structure
 ```
 ncdu
 ```
+Find out the serial number of the disc
+```
+sudo apt install smartmontools -y && \
+smartctl -s on -a /dev/nvme0
+smartctl -s on -a /dev/nvme1,2,3 
+```
