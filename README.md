@@ -116,3 +116,9 @@ sudo apt install smartmontools -y && \
 smartctl -s on -a /dev/nvme0
 smartctl -s on -a /dev/nvme1,2,3 
 ```
+## Cosmos
+Node status check
+```
+<binary> status 2>&1 | jq
+```
+
