@@ -121,4 +121,7 @@ Node status check
 ```
 <binary> status 2>&1 | jq
 ```
-
+Checking the number of peers
+```
+curl -s http://localhost:26657/net_info | jq -r '.result.n_peers'
+```
