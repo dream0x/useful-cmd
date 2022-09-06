@@ -145,3 +145,7 @@ Search for all incoming transactions by address
 ```
 <binary> q txs --events transfer.recipient=<ADDRESS> 2>&1 | jq | grep txhash
 ```
+Checking transaction information by hash
+```
+<binary> q tx <TX_HASH>
+```
