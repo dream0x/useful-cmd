@@ -133,4 +133,8 @@ Checking vote power online. It will come in handy for update
 ```
 curl -s localhost:26657/consensus_state | jq '.result.round_state.height_vote_set[0].prevotes_bit_array'
 ```
+List of monikers of connected peers
+```
+curl -s http://localhost:26657/net_info | jq '.result.peers[].node_info.moniker'
+```
 
