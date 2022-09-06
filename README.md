@@ -137,8 +137,11 @@ List of monikers of connected peers
 ```
 curl -s http://localhost:26657/net_info | jq '.result.peers[].node_info.moniker'
 ```
-Search for all outgoing transactions by address:
+Search for all outgoing transactions by address
 ```
 <binary> q txs --events transfer.sender=<ADDRESS> 2>&1 | jq | grep txhash
 ```
-
+Search for all incoming transactions by address
+```
+<binary> q txs --events transfer.recipient=<ADDRESS> 2>&1 | jq | grep txhash
+```
