@@ -125,3 +125,12 @@ Checking the number of peers
 ```
 curl -s http://localhost:26657/net_info | jq -r '.result.n_peers'
 ```
+or
+```
+curl -s http://localhost:26657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr | split(":")[2])"' | wc -l
+```
+Checking vote power online. It will come in handy for update
+```
+curl -s localhost:26657/consensus_state | jq '.result.round_state.height_vote_set[0].prevotes_bit_array'
+```
+
