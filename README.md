@@ -41,6 +41,15 @@ Displays the name of the current user
 ```
 whoami
 ```
+Creating a user
+```
+USER_NAME=<INPUT_ROJECT_NAME>
+adduser $USER_NAME && usermod -aG sudo $USER_NAME && su -l $USER_NAME
+```
+Deleting a user
+```
+userdel <name> -rf
+```
 Displays information about RAM usage
 ```
 free -h
