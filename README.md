@@ -90,7 +90,8 @@ speedtest-cli --simple
 ```
 Installing GO (One command)
 ```
-ver="1.18.1" && \
+cd $HOME && \
+ver="1.18.4" && \
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" && \
 sudo rm -rf /usr/local/go && \
 sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" && \
