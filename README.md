@@ -1,4 +1,4 @@
-# Hello all, below are all the handy server management commands
+# Handy server management commands
 
 This guide will be updated to over time as i find more interesting commands
 
