@@ -1,4 +1,5 @@
 # Handy server management commands
+![cmd](https://github.com/doxe1/useful-cmd/blob/main/cmd.png)
 
 This guide will be updated to over time as i find more interesting commands
 
