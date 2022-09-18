@@ -160,3 +160,7 @@ Checking transaction information by hash
 ```
 <binary> q tx <TX_HASH>
 ```
+Check if `priv_validator_key.json` is correct
+```
+[[ $($TIKER q staking validator $VALOPER -oj | jq -r .consensus_pubkey.key) = $($TIKER status | jq -r .ValidatorInfo.PubKey.value) ]] && echo -e "\nYou win\n" || echo -e "\nYou lose\n"
+```
