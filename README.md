@@ -141,6 +141,13 @@ sudo apt install smartmontools -y && \
 smartctl -s on -a /dev/nvme0
 smartctl -s on -a /dev/nvme1,2,3 
 ```
+Monitoring of most parameters
+```
+sudo apt install glances
+```
+```
+glances
+```
 ## Cosmos
 Node status check
 ```
