@@ -66,6 +66,20 @@ sudo apt install htop -y
 ```
 htop
 ```
+Disc
+```
+sudo apt install iotop -y
+```
+```
+iotop
+```
+Network
+```
+sudo apt install iftop -y
+```
+```
+iftop
+```
 Displays information about the operating system
 ```
 cat /etc/*-release
