@@ -1,9 +1,17 @@
 # Handy server management commands
-![cmd](https://github.com/doxe1/useful-cmd/blob/main/cmd.png)
+<img src="https://github.com/doxe1/doxe1/blob/main/cover.gif" width="100%" height="150">
 
-This guide will be updated to over time as i find more interesting commands
+_____
+<h3 align="center">Alexander, also known as <a href="https://t.me/doxe01" target="_blank">doxe</a>.</h3>
+<p align="center">Experienced web3 enthusiast, contributor, moderator and PoS/PoW validator, also just a friendly person </p>
 
-## Preparing the server
+_____
+
+This mini guide contains useful commands with descriptions to help you work with the server. As previously mentioned, one of my goals is development, so this guide will also be constantly expanding.
+_____
+<h3 name="intro" align="center">Preparing the server</h3>
+
+_____
 
 Update the repositories
 ```
@@ -36,7 +44,10 @@ Displays server external IP address
 wget -qO- eth0.me
 ```
 
-## Working with a server
+_____
+<h3 name="intro" align="center">Working the server</h3>
+
+_____
 
 Displays the name of the current user
 ```
@@ -148,7 +159,10 @@ sudo apt install glances
 ```
 glances
 ```
-## Cosmos
+_____
+<h3 name="intro" align="center">Cosmos network</h3>
+
+_____
 Node status check
 ```
 <binary> status 2>&1 | jq
